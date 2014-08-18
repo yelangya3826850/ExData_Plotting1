@@ -13,7 +13,7 @@ data$calendar <- strptime(data$calendar, "%d/%m/%Y %H:%M:%S")
 ## plot figure
 par(mfrow = c(2, 2))
 plot(data$calendar,data$Global_active_power,type = "l", ylab = "Global Active Power", xlab = "")
-plot(data$calendar,data$Voltage,type = "l", ylab = "Voltage", xlab = "datatime")
+plot(data$calendar,data$Voltage,type = "l", ylab = "Voltage", xlab = "datetime")
 plot(data$calendar,data$Sub_metering_1, type = "l", ylab = "Energy sub metering", xlab = "")
 lines(data$calendar,data$Sub_metering_2, col = "red")
 lines(data$calendar,data$Sub_metering_3, col = "blue")
